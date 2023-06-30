@@ -38,8 +38,16 @@
 
 
 .itm {
+    position: relative;
     height: 100vh;
 
+}
+
+.itm:before {
+    content: "";
+    position: absolute;
+    background: linear-gradient(to top, #333 5%, transparent 100%);
+    z-index: 999;
 }
 
 .mainvisual .itm01 {
@@ -56,6 +64,28 @@
 
 .mainvisual .itm04 {
     background: url(../images/section01_04.jpg)no-repeat center center/cover;
+}
+
+.mainvisual {
+    position: relative;
+}
+
+.mainvisual .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+    z-index: 999;
+}
+
+.mainvisual .title h2 {
+    font-size: 45px;
+    font-weight: 500;
+    text-shadow: 2px 2px 2px #000;
+    color: #fff;
+
 }
 
 .mainvisual .mainslide {}
@@ -103,7 +133,7 @@
 
 .maincontent .content_box01 h2 {
     font-size: 50px;
-    font-weight: 700;
+    font-weight: 500;
     margin: 0 0 50px 0;
 }
 
@@ -174,7 +204,7 @@
     right: 50px;
     width: 150px;
     height: 5px;
-    background: #000;
+    background: #444;
     transition: 0.5s;
 
 }
@@ -190,7 +220,7 @@
     right: 50px;
     width: 5px;
     height: 150px;
-    background: #000;
+    background: #444;
     transition: 0.5s;
 }
 
@@ -401,6 +431,8 @@
 
 .footer .fb .bottom {
     display: flex;
+    font-family: 'Noto Sans KR', sans-serif;
+
     justify-content: space-between;
     line-height: 20px;
 }
