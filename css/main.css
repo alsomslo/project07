@@ -38,7 +38,6 @@
 
 
 .itm {
-   
     height: 100vh;
     filter: brightness(80%);
 
@@ -79,14 +78,12 @@
 .mainvisual .title h2 {
     font-size: 45px;
     font-weight: 500;
-    text-shadow: 2px 2px 2px #000;
+    text-shadow: 1px 1px 1px #000;
     color: #fff;
 
 }
 
 .mainvisual .mainslide {}
-
-
 
 .mainvisual .mainslide .slick-dots {
     position: absolute;
